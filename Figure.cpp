@@ -7,6 +7,7 @@
  */
 
 #include "Figure.h"
+#include <ncurses.h>
 
 Figure::Figure() : m_row(0), m_col(0)
 {

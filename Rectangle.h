@@ -7,6 +7,7 @@
  */
 
 #ifndef Rectangle_h_INCLUDED
+#define Rectangle_h_INCLUDED
 
 #include "Figure.h"
 
@@ -27,5 +28,4 @@ private:
 	int m_width;
 };
 
-#define Rectangle_h_INCLUDED
 #endif

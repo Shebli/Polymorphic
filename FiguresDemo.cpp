@@ -8,6 +8,7 @@
 
 #include "Rectangle.h"
 #include <unistd.h>
+#include <ncurses.h>
 
 int main(int argc, char* argv[])
 {

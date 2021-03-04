@@ -7,6 +7,7 @@
  */
 
 #include "Point.h"
+#include <ncurses.h>
 
 Point::Point(int row, int col)
 {

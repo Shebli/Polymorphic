@@ -7,6 +7,7 @@
  */
 
 #ifndef Point_h_INCLUDED
+#define Point_h_INCLUDED
 
 #include "Figure.h"
 
@@ -17,5 +18,4 @@ public:
 	void draw(char glyphChar = DEFAULT_GLYPH) const override;
 };
 
-#define Point_h_INCLUDED
 #endif

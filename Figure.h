@@ -7,8 +7,7 @@
  */
 
 #ifndef Figure_h_INCLUDED
-
-#include <ncurses.h>
+#define Figure_h_INCLUDED
 
 enum Direction { DIR_RIGHT, DIR_LEFT, DIR_UP, DIR_DOWN };
 
@@ -34,5 +33,4 @@ private:
 	int m_col;
 };
 
-#define Figure_h_INCLUDED
 #endif
