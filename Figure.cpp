@@ -11,6 +11,7 @@
 
 Figure::Figure() : m_row(0), m_col(0)
 {
+	normalize();
 }
 
 bool Figure::move(Direction dir)
