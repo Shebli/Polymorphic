@@ -31,16 +31,20 @@ void animate(Figure& figure)
 
 int main(int argc, char* argv[])
 {
+	// ncurses screen initializations
 	initscr();
 	noecho();
 	curs_set(0);
 
+	// Instantiation of concrete figures
 	Rectangle rect(4,10);
 	Point point;
 
+	// Animate successively the instantiated figures
 	animate(point);
 	animate(rect);
 
+	// Wait user keystroke for exit and close ncurses screen
 	printw("Hit any key... ");
 	curs_set(2);
 	getch();
