@@ -21,7 +21,7 @@ public:
 	void draw(char glyphChar = DEFAULT_GLYPH) const override;
 
 protected:
-	virtual void normalize() override;
+	void normalize() override;
 
 private:
 	int m_height;
