@@ -6,19 +6,16 @@
  * =====================================================================================================================
  */
 
+#include "Point.h"
 #include "Rectangle.h"
 #include <unistd.h>
 #include <ncurses.h>
 
-int main(int argc, char* argv[])
+/**
+ * Takes any figure and animates it on the screen.
+ */
+void animate(Figure& figure)
 {
-	initscr();
-	noecho();
-	curs_set(0);
-
-	Rectangle rect(4,10);
-
-	Figure& figure = rect;
 	figure.place(10, 5);
 	for (int i=0; i < 5; ++i)
 	{
@@ -30,6 +27,19 @@ int main(int argc, char* argv[])
 		figure.move(DIR_RIGHT);
 		figure.move(DIR_DOWN);
 	}
+}
+
+int main(int argc, char* argv[])
+{
+	initscr();
+	noecho();
+	curs_set(0);
+
+	Rectangle rect(4,10);
+	Point point;
+
+	animate(point);
+	animate(rect);
 
 	printw("Hit any key... ");
 	curs_set(2);
